@@ -14,6 +14,7 @@ let mid
 //For this binary search, we first find whether the first half or second half
 //of the array is sorted correctly. Once that is figured out, we do a generic
 //binary search inside the correctly sorted side.
+
 while (low <= high) {
     mid = Math.floor((low + high) / 2)
 
