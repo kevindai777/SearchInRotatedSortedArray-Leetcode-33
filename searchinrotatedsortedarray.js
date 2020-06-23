@@ -20,12 +20,14 @@ while (low <= high) {
 
     if (nums[mid] === target) {
         return mid
+    //Left side is sorted correctly
     } else if (nums[low] <= nums[mid]) {
         if (target >= nums[low] && target < nums[mid]) {
             high = mid - 1
         } else {
             low = mid + 1
         }
+    //Right side is sorted correctly
     } else {
         if (target <= nums[high] && target > nums[mid]) {
             low = mid + 1
